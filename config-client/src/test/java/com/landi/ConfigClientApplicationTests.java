@@ -13,5 +13,4 @@ public class ConfigClientApplicationTests {
 	public void contextLoads() {
 	}
 
-
 }
