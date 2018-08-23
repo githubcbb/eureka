@@ -13,7 +13,7 @@ public class HelloService {
     @Autowired
     RestTemplate restTemplate;
 
-    @HystrixCommand(fallbackMethod = "hiError")
+    @HystrixCommand(fallbackMethod = "hiError")//断路器，拥有熔断功能
     public String hiService(String name) {
         return restTemplate.getForObject("http://SERVICE-HI/hi?name="+name,String.class);
     }
