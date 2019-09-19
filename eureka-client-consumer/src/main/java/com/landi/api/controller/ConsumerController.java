@@ -17,7 +17,7 @@ public class ConsumerController {
 
 	@RequestMapping("/test")
 	public String test(){
-		String result = restTemplate.getForObject("http://localhost:8861/getPort",String.class);
+		String result = restTemplate.getForObject("http://eureka-client-provider/getPort",String.class);
 		return result;
 	}
 }
