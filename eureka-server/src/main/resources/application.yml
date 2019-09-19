@@ -1,3 +1,7 @@
+spring:
+  application:
+    name: eurka-server
+
 server:
   port: 8761
 
@@ -11,6 +15,3 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ #设置eureka服务器所在的地址，查询服务和注册服务都需要依赖这个地址。
 #  server:
 #    enable-self-preservation: false 自我保护机制（每三十秒进行一次心跳检测   Renews threshold：server期望在每分钟中收到的心跳次数，Renews (last min)：上一分钟内收到的心跳次数。）
-spring:
-  application:
-    name: eurka-server
